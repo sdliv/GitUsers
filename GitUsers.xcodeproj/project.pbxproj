@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		67431E9C1E7AC41B004F2D60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431E9B1E7AC41B004F2D60 /* AppDelegate.swift */; };
-		67431E9E1E7AC41B004F2D60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431E9D1E7AC41B004F2D60 /* ViewController.swift */; };
 		67431EA11E7AC41B004F2D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67431E9F1E7AC41B004F2D60 /* Main.storyboard */; };
 		67431EA41E7AC41B004F2D60 /* GitUsers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67431EA21E7AC41B004F2D60 /* GitUsers.xcdatamodeld */; };
 		67431EA61E7AC41B004F2D60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67431EA51E7AC41B004F2D60 /* Assets.xcassets */; };
 		67431EA91E7AC41B004F2D60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67431EA71E7AC41B004F2D60 /* LaunchScreen.storyboard */; };
+		67431EB11E7ACAAF004F2D60 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EB01E7ACAAF004F2D60 /* UserTableViewController.swift */; };
+		67431EB31E7ACB02004F2D60 /* GitUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EB21E7ACB02004F2D60 /* GitUser.swift */; };
+		67431EB61E7ACC6E004F2D60 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67431EB51E7ACC6E004F2D60 /* libstdc++.tbd */; };
+		67431EB81E7ACC8C004F2D60 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 67431EB71E7ACC8C004F2D60 /* libz.tbd */; };
+		67431EBA1E7ACFE7004F2D60 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EB91E7ACFE7004F2D60 /* DataSource.swift */; };
+		67431EBC1E7AF1A7004F2D60 /* GitUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */; };
+		67431EC01E7B0543004F2D60 /* FollowerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */; };
+		67431EC21E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67431E981E7AC41B004F2D60 /* GitUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67431E9B1E7AC41B004F2D60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67431E9D1E7AC41B004F2D60 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67431EA01E7AC41B004F2D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67431EA31E7AC41B004F2D60 /* GitUsers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GitUsers.xcdatamodel; sourceTree = "<group>"; };
 		67431EA51E7AC41B004F2D60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67431EA81E7AC41B004F2D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67431EAA1E7AC41B004F2D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67431EB01E7ACAAF004F2D60 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		67431EB21E7ACB02004F2D60 /* GitUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitUser.swift; sourceTree = "<group>"; };
+		67431EB51E7ACC6E004F2D60 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		67431EB71E7ACC8C004F2D60 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		67431EB91E7ACFE7004F2D60 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitUserTableViewCell.swift; sourceTree = "<group>"; };
+		67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerCollectionViewCell.swift; sourceTree = "<group>"; };
+		67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersUIColCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67431EB81E7ACC8C004F2D60 /* libz.tbd in Frameworks */,
+				67431EB61E7ACC6E004F2D60 /* libstdc++.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +58,7 @@
 			children = (
 				67431E9A1E7AC41B004F2D60 /* GitUsers */,
 				67431E991E7AC41B004F2D60 /* Products */,
+				67431EB41E7ACC6E004F2D60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +74,28 @@
 			isa = PBXGroup;
 			children = (
 				67431E9B1E7AC41B004F2D60 /* AppDelegate.swift */,
-				67431E9D1E7AC41B004F2D60 /* ViewController.swift */,
 				67431E9F1E7AC41B004F2D60 /* Main.storyboard */,
 				67431EA51E7AC41B004F2D60 /* Assets.xcassets */,
 				67431EA71E7AC41B004F2D60 /* LaunchScreen.storyboard */,
 				67431EAA1E7AC41B004F2D60 /* Info.plist */,
 				67431EA21E7AC41B004F2D60 /* GitUsers.xcdatamodeld */,
+				67431EB01E7ACAAF004F2D60 /* UserTableViewController.swift */,
+				67431EB21E7ACB02004F2D60 /* GitUser.swift */,
+				67431EB91E7ACFE7004F2D60 /* DataSource.swift */,
+				67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */,
+				67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */,
+				67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */,
 			);
 			path = GitUsers;
+			sourceTree = "<group>";
+		};
+		67431EB41E7ACC6E004F2D60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				67431EB71E7ACC8C004F2D60 /* libz.tbd */,
+				67431EB51E7ACC6E004F2D60 /* libstdc++.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				67431EA41E7AC41B004F2D60 /* GitUsers.xcdatamodeld in Sources */,
-				67431E9E1E7AC41B004F2D60 /* ViewController.swift in Sources */,
+				67431EB11E7ACAAF004F2D60 /* UserTableViewController.swift in Sources */,
 				67431E9C1E7AC41B004F2D60 /* AppDelegate.swift in Sources */,
+				67431EC21E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift in Sources */,
+				67431EBC1E7AF1A7004F2D60 /* GitUserTableViewCell.swift in Sources */,
+				67431EBA1E7ACFE7004F2D60 /* DataSource.swift in Sources */,
+				67431EC01E7B0543004F2D60 /* FollowerCollectionViewCell.swift in Sources */,
+				67431EB31E7ACB02004F2D60 /* GitUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +337,7 @@
 				67431EAF1E7AC41B004F2D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
