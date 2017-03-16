@@ -8,21 +8,31 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+private let reuseIdentifier = "gitFollwercell"
 
 class FollowersUIColCollectionViewController: UICollectionViewController {
     
     var gitUser: GitUser = GitUser()
-    var gitFollowers:[GitUser] = [GitUser]()
+    var gitFollowers:[[String:Any]] = [[String:Any]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getFollowers(userName: "sdliv") { (theUsers) in
+            print(theUsers)
+            if let followers = theUsers as? [[String:Any]] {
+                self.gitFollowers = followers
+            }
+            self.collectionView?.reloadData()
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+//        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+        self.collectionView?.reloadData()
 
         // Do any additional setup after loading the view.
     }
@@ -52,11 +62,20 @@ class FollowersUIColCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return gitFollowers.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! FollowerCollectionViewCell
+        let gitFollower = GitUser()
+        let theFollower = gitFollowers[indexPath.row]
+        
+        gitFollower.name = theFollower["login"] as? String
+        gitFollower.avatarUrl = theFollower["avatar_url"] as? String
+        
+        cell.setupCell(user: gitFollower)
+        
+        
     
         // Configure the cell
     

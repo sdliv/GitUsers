@@ -64,11 +64,11 @@
             </objects>
             <point key="canvasLocation" x="1175.2" y="62.518740629685162"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--FollowersUI Col Collection View Controller-->
         <scene sceneID="kGY-Yv-f3d">
             <objects>
-                <collectionViewController id="MKd-Qf-7UW" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FHq-Fy-NJk">
+                <collectionViewController id="MKd-Qf-7UW" customClass="FollowersUIColCollectionViewController" customModule="GitUsers" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="FHq-Fy-NJk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -85,7 +85,33 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="151" height="215"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEw-fe-gq5">
+                                            <rect key="frame" x="54" y="144" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DwL-pO-lvG">
+                                            <rect key="frame" x="34" y="48" width="83" height="88"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstItem="DwL-pO-lvG" firstAttribute="leading" secondItem="9nc-yR-r3m" secondAttribute="leadingMargin" constant="26" id="29b-hI-dAd"/>
+                                    <constraint firstItem="JEw-fe-gq5" firstAttribute="leading" secondItem="9nc-yR-r3m" secondAttribute="leadingMargin" constant="46" id="MFI-Zg-mrv"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="JEw-fe-gq5" secondAttribute="bottom" constant="42" id="O9F-WY-dTi"/>
+                                    <constraint firstItem="JEw-fe-gq5" firstAttribute="centerX" secondItem="9nc-yR-r3m" secondAttribute="centerX" id="TOg-Yr-WDO"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="DwL-pO-lvG" secondAttribute="trailing" constant="26" id="ZRz-O8-pXE"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="JEw-fe-gq5" secondAttribute="trailing" constant="47" id="efI-UC-G7Z"/>
+                                    <constraint firstItem="JEw-fe-gq5" firstAttribute="top" secondItem="DwL-pO-lvG" secondAttribute="bottom" constant="8" id="fc6-ZW-AEm"/>
+                                    <constraint firstItem="DwL-pO-lvG" firstAttribute="centerX" secondItem="9nc-yR-r3m" secondAttribute="centerX" id="hyQ-FR-Z9k"/>
+                                    <constraint firstItem="DwL-pO-lvG" firstAttribute="top" secondItem="9nc-yR-r3m" secondAttribute="topMargin" constant="40" id="tG7-ip-sCs"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="avatarImage" destination="DwL-pO-lvG" id="B2X-nX-T3h"/>
+                                    <outlet property="gitUserLabel" destination="JEw-fe-gq5" id="rpG-Qj-Aa8"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
