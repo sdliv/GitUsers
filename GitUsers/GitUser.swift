@@ -24,7 +24,7 @@ class GitUser: CustomStringConvertible {
     
     var description: String {
         get {
-            return "GitUser: Name: \(userName), Email: \(email), Location: \(location), Repo Count: \(repoCount), Following Count: \(followingCount), Follower Count: \(followerCount), Followers URL: \(followersUrl), URL: \(url), Avatar URL: \(avatarUrl)"
+            return "GitUser: Username: \(userName), Name: \(name), Email: \(email), Location: \(location), Repo Count: \(repoCount), Following Count: \(followingCount), Follower Count: \(followerCount), Followers URL: \(followersUrl), URL: \(url), Avatar URL: \(avatarUrl)"
         }
     }
 }

@@ -29,7 +29,7 @@ class GitUserTableViewCell: UITableViewCell {
         if let url = gitUser.avatarUrl {
             avatarImageView.imageFromURL(urlString: url)
         }
-        self.gitUserNameLabel.text = gitUser.name
+        self.gitUserNameLabel.text = gitUser.userName
         
     }
 

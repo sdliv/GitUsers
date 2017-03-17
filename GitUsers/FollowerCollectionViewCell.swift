@@ -13,7 +13,7 @@ class FollowerCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var avatarImage: UIImageView!
     
     func setupCell(user:GitUser) {
-        gitUserLabel.text = user.name
+        gitUserLabel.text = user.userName
         avatarImage.imageFromURL(urlString: user.avatarUrl!)
     }
 }

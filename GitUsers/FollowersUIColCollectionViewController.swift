@@ -10,15 +10,16 @@ import UIKit
 
 private let reuseIdentifier = "gitFollwercell"
 
-class FollowersUIColCollectionViewController: UICollectionViewController {
+class FollowersUIColCollectionViewController: UICollectionViewController  {
     
     var gitUser: GitUser = GitUser()
     var gitFollowers:[[String:Any]] = [[String:Any]]()
+    var myGitFollowers:[GitUser] = [GitUser]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getFollowers(userName: "sdliv") { (theUsers) in
+        getFollowers(followerURL: gitUser.followersUrl!) { (theUsers) in
             print(theUsers)
             if let followers = theUsers as? [[String:Any]] {
                 self.gitFollowers = followers
@@ -70,10 +71,23 @@ class FollowersUIColCollectionViewController: UICollectionViewController {
         let gitFollower = GitUser()
         let theFollower = gitFollowers[indexPath.row]
         
-        gitFollower.name = theFollower["login"] as? String
+        gitFollower.userName = theFollower["login"] as? String
         gitFollower.avatarUrl = theFollower["avatar_url"] as? String
+        gitFollower.email = theFollower["email"] as? String
+        gitFollower.name = theFollower["name"] as? String
+        gitFollower.location = theFollower["loation"] as? String
+        gitFollower.followerCount = theFollower["followers"] as? Int
+        gitFollower.followingCount = theFollower["following"] as? Int
+        gitFollower.repoCount = theFollower["public_repos"] as? Int
+        
+        print(gitFollower.userName)
+        print(gitFollower.name)
+        print(theFollower["name"] as? String)
+        print("STOP")
         
         cell.setupCell(user: gitFollower)
+        
+        myGitFollowers.append(gitFollower)
         
         
     
@@ -81,6 +95,17 @@ class FollowersUIColCollectionViewController: UICollectionViewController {
     
         return cell
     }
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let selectedUser = myGitFollowers[indexPath.row]
+        
+        let vc: ProfileUIViewController = self.storyboard?.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileUIViewController
+        vc.theFollower = selectedUser
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
 
     // MARK: UICollectionViewDelegate
 

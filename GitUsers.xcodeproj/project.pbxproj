@@ -20,6 +20,8 @@
 		67431EBC1E7AF1A7004F2D60 /* GitUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */; };
 		67431EC01E7B0543004F2D60 /* FollowerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */; };
 		67431EC21E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */; };
+		67431EC41E7B1C9A004F2D60 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EC31E7B1C9A004F2D60 /* CustomLayout.swift */; };
+		67431EE91E7B6F4E004F2D60 /* ProfileUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67431EE81E7B6F4E004F2D60 /* ProfileUIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitUserTableViewCell.swift; sourceTree = "<group>"; };
 		67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowerCollectionViewCell.swift; sourceTree = "<group>"; };
 		67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersUIColCollectionViewController.swift; sourceTree = "<group>"; };
+		67431EC31E7B1C9A004F2D60 /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		67431EE81E7B6F4E004F2D60 /* ProfileUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileUIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		67431E8F1E7AC41A004F2D60 = {
 			isa = PBXGroup;
 			children = (
+				67431EC31E7B1C9A004F2D60 /* CustomLayout.swift */,
 				67431E9A1E7AC41B004F2D60 /* GitUsers */,
 				67431E991E7AC41B004F2D60 /* Products */,
 				67431EB41E7ACC6E004F2D60 /* Frameworks */,
@@ -85,6 +90,7 @@
 				67431EBB1E7AF1A7004F2D60 /* GitUserTableViewCell.swift */,
 				67431EBF1E7B0543004F2D60 /* FollowerCollectionViewCell.swift */,
 				67431EC11E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift */,
+				67431EE81E7B6F4E004F2D60 /* ProfileUIViewController.swift */,
 			);
 			path = GitUsers;
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 				TargetAttributes = {
 					67431E971E7AC41A004F2D60 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VEM8YS6H27;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -170,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67431EC41E7B1C9A004F2D60 /* CustomLayout.swift in Sources */,
 				67431EA41E7AC41B004F2D60 /* GitUsers.xcdatamodeld in Sources */,
+				67431EE91E7B6F4E004F2D60 /* ProfileUIViewController.swift in Sources */,
 				67431EB11E7ACAAF004F2D60 /* UserTableViewController.swift in Sources */,
 				67431E9C1E7AC41B004F2D60 /* AppDelegate.swift in Sources */,
 				67431EC21E7B05C6004F2D60 /* FollowersUIColCollectionViewController.swift in Sources */,
@@ -298,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEM8YS6H27;
 				INFOPLIST_FILE = GitUsers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanthedev.GitUsers;
@@ -310,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VEM8YS6H27;
 				INFOPLIST_FILE = GitUsers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanthedev.GitUsers;

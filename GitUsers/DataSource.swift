@@ -34,8 +34,8 @@ func getUser(userName:String, completionHandler:@escaping (_ json:[String:Any]) 
     task.resume()
 }
 
-func getFollowers(userName:String, completionHandler: @escaping (_ json:[[String:Any]]) -> ()) {
-    let url = URL(string: "https://api.github.com/users/\(userName)/followers")
+func getFollowers(followerURL:String, completionHandler: @escaping (_ json:[[String:Any]]) -> ()) {
+    let url = URL(string: followerURL)
     let task = session.dataTask(with: url!) { (data, response, error) in
         if error != nil {
             print(error!.localizedDescription)
